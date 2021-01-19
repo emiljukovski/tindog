@@ -1,38 +1,33 @@
 body {
   font-family: "Montserrat";
+  text-align: center;
 }
 
-#title {
-  background-color: #ff4c68;
-  color: #ffffff;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+  font-weight: 900;
 }
 
+/* Containers */
 .container-fluid {
-  padding: 3% 15% 7%;
-}
-
-h1 {
-  font-family: "Montserrat";
-  font-size: 2.5rem;
-  line-height: 1.5;
-  font-weight: 900;
-}
-
-h2 {
-  font-family: "Montserrat";
-  font-size: 3rem;
-  line-height: 1.5;
-  font-weight: 900;
-}
-
-h3 {
-  font-family: "Montserrat";
-  font-size: 1.5rem;
-  font-weight: 900;
+  padding: 7% 15%;
 }
 
 p {
   color: #8f8f8f;
+}
+
+/* Headings */
+.big-heading {
+  font-family: "Montserrat";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 /* Navigation Bar */
@@ -62,6 +57,18 @@ p {
   margin: 5% 3% 5% 0;
 }
 
+/* Title Section */
+#title {
+  background-color: #ff4c68;
+  color: #ffffff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* Title Image */
 .title-image {
   width: 250px;
   height: 500px;
@@ -72,14 +79,16 @@ p {
 
 /* Features */
 #features {
-  padding: 7% 15%;
   background-color: #fff;
   position: relative;
   z-index: 1;
 }
 
+.feature-title {
+  font-size: 1.5rem;
+}
+
 .feature-box {
-  text-align: center;
   padding: 7%;
 }
 
@@ -97,8 +106,12 @@ p {
 #testimonials {
   background-color: #ef8172;
   color: #ffffff;
-  text-align: center;
   position: relative;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonial-image {
@@ -107,14 +120,9 @@ p {
   margin: 3%;
 }
 
-.carousel-item {
-  padding: 7% 15%;
-}
-
 /* Press Section */
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 20px;
 }
 
@@ -126,7 +134,11 @@ p {
 /*  Pricing Section */
 #pricing {
   padding: 100px;
-  text-align: center;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .pricing-column {
@@ -137,34 +149,19 @@ p {
 #cta {
   background-color: #ff4c68;
   color: #ffffff;
-  padding: 7% 15%;
-  text-align: center;
-}
-
-.cta-heading {
-  font-family: "Montserrat"
-    font-weight: 900;
-  font-size: 3.5rem;
-  line-height: 1.5;
 }
 
 /* Footer Section */
 #footer {
   background-color: #ffffff;
-  padding: 7% 15%;
-  text-align: center;
 }
 
 .footer-button {
   margin: 20px 10px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1028px) {
   #title {
-    text-align: center;
-  }
-
-  #cta {
     text-align: center;
   }
 
